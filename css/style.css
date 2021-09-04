@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.head1{ 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    background: url('/img/8.jpg') no-repeat center center/cover;
+}
+.navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    
+    color: white;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background: gray no-repeat center center/cover;
+    opacity: 0.8;
+}
+.navbar img {
+    width: 5.5rem;
+    height: 4.5rem;
+    
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+}
+.item{
+    margin: 1.5rem 1rem;
+    margin-bottom: 0px;
+    height: 1.6rem;
+    width: 6.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.5;
+}
+.item:hover{
+    cursor: pointer;
+    font-size: 1.35rem;
+    color: black;
+}
+.wel{
+    color: white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center; 
+}
+.wel p{
+    font-size: 1.3rem;
+}
+.button{
+    justify-content: center;
+    align-self: center;
+    margin: 0.5rem 1rem;
+    padding: 0.2rem 0.3rem;
+    font-size: 1.7rem;
+    background-color: rgb(54, 139, 54);
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.part{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white no-repeat center center/cover;
+    width: 100%;
+    z-index: -1;        
+}
+.mid{
+    text-align: center;
+}
+.head2{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.box{
+    border: 4px solid red;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+}
+#box1 img{
+    width: 13rem;
+}
+#box2 img{
+    width: 12rem;
+    filter: invert(0.8);
+}
+#box3 img{
+    width: 13rem;
+}
+.form{
+    margin-top: 2vw;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.2rem; 
+    border: 2px solid black;
+    background: url("/img/contact.jpg") no-repeat top center/cover;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.inbox{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+.titl{
+    margin: 0.4rem; 
+}
+#msg{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+.form input{
+    height: 1.5rem;
+    width: 30vw;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 2px 4px;
+    
+}
+#bada{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.client{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.client img{
+    width: 4rem;
+}
+#client{
+    display: block;
+    text-align: center;
+}
+@media (max-width:900px){
+    
+    .navbar{
+        flex-flow: column;
+        
+    }
+    
+    .navbar .item{
+        margin-left: 0rem;
+        font-size: 0.9rem;
+        width: 4rem;
+        
+    }
+    #last{
+        width: 5rem;
+    }
+    .navbar ul{
+        justify-content: center;
+        align-self: center;
+        margin-top: 0px;
+    }
+    .item{
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+    }
+    .navbar img {
+        display: block;
+        align-items: center;
+        align-self: center;
+        width: 5.5rem;
+        height: 4.5rem;
+        
+    }
+    .head2{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+    .button{
+        margin-top: 0rem;
+    }
+    .wel p{
+        font-size: 1rem;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    #box1 img{
+        width: 18vw;
+    }
+    #box2 img{
+        width: 17vw;
+        filter: invert(0.8);
+    }
+    #box3 img{
+        width: 18vw;
+    }   
+    .form input{
+        width: 60vw;
+    }
+
+    .client img{
+        width: 2.5rem;
+    }
+}
